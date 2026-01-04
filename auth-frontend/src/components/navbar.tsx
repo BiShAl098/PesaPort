@@ -123,7 +123,7 @@ export default function Navbar() {
 
       <div className="md:hidden fixed top-16 left-0 right-0 px-4 py-3 z-40 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm">
         <div className="relative group">
-          <input type="text" placeholder="Search Category..." className="w-full px-5 py-3 pr-14 bg-white border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-amber-400 transition-all shadow-sm" />
+          <input type="text" placeholder="Search Services..." className="w-full px-5 py-3 pr-14 bg-white border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-amber-400 transition-all shadow-sm" />
           <button className="absolute right-2 top-1/2 -translate-y-1/2 p-2.5 bg-linear-to-r from-amber-500 to-orange-500 text-white rounded-xl hover:from-amber-600 hover:to-orange-600 transition-all shadow-md"><Search size={20} /></button>
         </div>
       </div>

@@ -13,6 +13,7 @@ import {
   Heart
 } from "lucide-react";
 import Navbar from "../components/navbar";
+import FeaturedServices from "../components/cards";
 // import backgroundImg from "../assets/background.png"
 export default function FreeTrial() {
   const categories = [
@@ -109,6 +110,7 @@ export default function FreeTrial() {
           </div>
         </div>
       </section>
+      <FeaturedServices/>
 
       {/* CATEGORIES */}
       <section className="bg-white py-20 px-4">

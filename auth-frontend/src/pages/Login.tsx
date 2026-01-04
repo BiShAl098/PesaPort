@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 
-import backgroundImg from '../assets/background.png';
+
 import logoImg from '../assets/hugeicons_course.png';
 
 function Login() {
@@ -50,26 +50,20 @@ function Login() {
 
   return (
     <div className="min-h-screen relative flex items-center justify-center overflow-hidden bg-[#ECEFCA]">
-      <img
-        src={backgroundImg}
-        alt="Background"
-        className="absolute inset-0 w-full h-full object-cover pointer-events-none"
-      />
+      
 
       {/* Header */}
-      <header className="absolute top-0 left-0 right-0 p-4 md:p-8 flex justify-between items-center z-30">
+      <header className="absolute -top-5 left-0 right-0 p-4 md:p-8 flex justify-between items-center z-30">
         <div className="flex items-center gap-3">
-          <img src={logoImg} alt="Logo" className="w-10 h-10" />
-          <h1 className="text-2xl font-bold text-green-800 hidden md:block">
-            PesaPort
-          </h1>
+          <img src={logoImg} alt="Logo" className="w-20 h-25" />
+          
         </div>
 
         <nav className="hidden md:flex items-center gap-4">
-          <a href="/" className="px-6 py-2 text-gray-700 font-medium hover:bg-gray-200 rounded-lg transition">
-            Sign Up
+          <a href="/login" className="px-8 py-2 text-white font-medium bg-[#5C7C94] hover:bg-blue-800 rounded-lg transition">
+            Log In
           </a>
-          <a href="/freeTrial" className="px-6 py-2 bg-[#1e3a8a] text-white font-medium rounded-lg hover:bg-[#1e40af] transition">
+          <a href="/Freetrial" className="px-6 py-2 border border-[#5C7C94] text-[#24384B] font-medium rounded-lg hover:bg-white hover:text-black transition">
             Free Trial
           </a>
         </nav>
@@ -77,6 +71,7 @@ function Login() {
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           className="md:hidden text-gray-800 z-50"
+          aria-label="Toggle menu"
         >
           {isMobileMenuOpen ? <X size={32} /> : <Menu size={32} />}
         </button>
@@ -119,7 +114,7 @@ function Login() {
             WELCOME BACK,
           </h2>
           <p className="text-center text-gray-300 mb-8 text-sm leading-relaxed">
-            Log in to continue your learning journey with Tic's Course.
+            Log in to continue finding your giving jobs or finding jobs.  
           </p>
 
           <form onSubmit={handleLogin} className="space-y-6">
